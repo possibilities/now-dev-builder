@@ -1,0 +1,13 @@
+{
+  "name": "now-dev-builder",
+  "version": "0.0.110",
+  "scripts": {
+    "lint": "standard"
+  },
+  "devDependencies": {
+    "standard": "12.0.1"
+  },
+  "peerDependencies": {
+    "@now/build-utils": "^0.4.36"
+  }
+}
