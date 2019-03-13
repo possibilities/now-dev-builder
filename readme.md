@@ -27,3 +27,18 @@ ln -sf /tmp/now-builders/packages/now-static-build /tmp/now-dev-builder-fixture/
 echo "\nconsole.log('LOOK FOR THIS IN THE NOW.SH CONSOLE')" >> /tmp/now-builders/packages/now-static-build/index.js
 now
 ```
+
+### Configure
+
+The directory where the builder is located can be customized in [`now.json`](https://zeit.co/docs/v2/deployments/configuration/#builds)
+
+```
+{
+  "version": 2,
+  "builds": [{
+    "src": "package.json",
+    "use": "now-dev-builder",
+    "config": { "builderPath": "path/to/your/builder" }
+  }]
+}
+```
